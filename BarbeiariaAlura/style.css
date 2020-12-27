@@ -1,0 +1,265 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+header {
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+header:hover {
+  box-shadow: inset 0 0 50px white;
+}
+
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+.itensDoNav {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+}
+
+nav a {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #c78c19;
+}
+
+.imagem {
+  width: 100%;
+}
+
+.principal {
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left; /*utilizado para que o float não modifique o espaçamento mantendo o texto no local*/
+  /* color: rgba(0, 0, 0, 0.3);  rgba tem permete mexer com a opacidade */
+}
+
+.principal p {
+  margin: 0 0 1em; /* cria uma margem inferir do propocional ao tamanho da fonte*/
+}
+
+/* .tituloPrincipal:first-letter {
+  font-weight: bold;
+}
+
+.tituloPrincipal:before {
+  content: '[ ';
+}
+.tituloPrincipal:after {
+  content: ' ]';
+} */
+
+/* p:first-line {
+  font-style: italic;
+} transforma a primeira linha em italico */
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0; /*cima direita baixo esquerda */
+}
+
+.utensilios:hover {
+  box-shadow: -10px -10px 10px 5px black;
+  /* eixo x y blur e espalhamento */
+}
+
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.conteudoMapa {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.mapa p {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.beneficios {
+  padding: 3em 0;
+  background: #888888;
+}
+.conteudoBeneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+.imagemBeneficios {
+  width: 60%;
+  opacity: 1;
+  box-shadow: 10px 10px 10px black;
+  transition: 500ms;
+}
+
+.imagemBeneficios:hover {
+  opacity: 0.3;
+}
+
+.listaBeneficios {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+
+.itens {
+  line-height: 1.5em;
+}
+
+.itens:before {
+  content: '★';
+}
+
+.itens:hover {
+  text-shadow: 0 5px rgba(0, 0, 0, 0.2); /*  adiciona sombra no texto */
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
+/* nth-child() permite que seja escolhido qualquer item da lista inseiro um numero no () sem usar 2n voce
+pega todos os itens pares   */
+
+.video {
+  width: 560px;
+  margin: 2em auto;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: url('../Imagens/bg.jpg');
+}
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* main > p {
+    background: red; 
+} */
+/* o somente o paragrafo filho direto do main vai mudar de cor  */
+
+/* img + p {
+  background: blue;
+} */
+/* Neste caso, usamos img como elemento âncora e para o primeiro irmão usamos o sinal de "+" */
+/* img ~ p {
+  background: yellow;
+} */
+/* Para selecionar todos os parágrafos localizados depois de uma imagem usamos o seletor ~ */
+
+/* .principal p:not(#missao) {
+  background: orange;
+} */
+/* Se quisermos excluir todos os parágrafos que não compõe missao, escreveremos:  */
+
+@media screen and (max-width: 480px) {
+  .caixa {
+    width: auto;
+  }
+
+  .principal {
+    width: auto;
+    padding: 1em;
+    margin: 0, auto;
+    text-align: justify;
+  }
+
+  .tituloPrincipal {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 0 1em;
+    clear: left;
+  }
+
+  .utensilios {
+    width: 100px;
+    float: left;
+    margin: 0 5px 5px 0; /*cima direita baixo esquerda */
+  }
+
+  .mapa {
+    padding: 1em 0;
+    background: linear-gradient(#fefefe, #888888);
+  }
+  .conteudoMapa {
+    width: auto;
+  }
+
+  .conteudoMapa iframe {
+    width: 355px;
+    margin: 0 10px;
+  }
+
+  .beneficios {
+    padding: 1em 0;
+  }
+  .conteudoBeneficios {
+    width: auto;
+  }
+
+  .listaBeneficios {
+    margin: 0 0 10px 10px;
+    width: 100%;
+  }
+
+  .imagemBeneficios {
+    width: 355px;
+    margin: 0 10px;
+    box-shadow: 0 10px 10px;
+  }
+
+  .video {
+    width: auto;
+    margin-top: 3em;
+  }
+
+  .video iframe {
+    width: 355px;
+    margin: 10px 10px 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+}

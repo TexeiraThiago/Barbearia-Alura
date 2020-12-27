@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="../reset.css" rel="stylesheet">
+  <link href="./contatos.css" rel="stylesheet">
+  <title> Contatos - Barbearia Alura </title>
+</head>
+
+<Body>
+  <header>
+    <div class="caixa">
+      <h1><img src="../Imagens/logo.png" alt="Logo da barbearia Alura"></h1>
+      <!-- nav de navegação é um menu que contém os links principais substituindo uma classe -->
+      <nav>
+        <ul>
+          <li><a href="../BarbeiariaAlura/index.html">Home</a></li>
+          <li><a href="../Produtos/produtos.html">Produto</a></li>
+          <li><a href="../Contatos/contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <form>
+      <label for="nomeSobrenome">Nome e sobrenome: </label>
+      <input type="text" id="nomeSobrenome" class='inputPadrao' required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" class='inputPadrao' required placeholder="seuemail@dominio.com">
+
+      <label for="telefone">Telefone: </label>
+      <input type="tel" id="telefone" class='inputPadrao' required placeholder="(xx) x xxxx-xxxx">
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" cols="60" rows="10" class='inputPadrao' required></textarea>
+
+      <fieldset>
+
+        <legend> Como prefere nosso contato?</legend>
+
+        <label for="emailRadio"><input type="radio" name="contato" value="email" id="emailRadio">Email</label>
+
+
+        <label for="telefoneRadio"><input type="radio" name="contato" value="telefone"
+            id="telefoneRadio">Telefone</label>
+
+
+        <label for="whatsappRadio"><input type="radio" name="contato" value="whatsapp" id="whatsappRadio"
+            checked>Whatsapp</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Qual melhor horário para contato?</legend>
+        <select>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+        </select>
+      </fieldset>
+
+      <label><input class="checkbox" type="checkbox" checked>Gostaria de receber nossa novidades por email?</label>
+      <!-- com o input dentro do label funciona igual o for dentro do label -->
+
+
+      <input type="submit" name="contato" value="Enviar Formulário" class="enviar">
+
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Dia</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Segunda</td>
+          <td>8h~20h</td>
+        </tr>
+        <tr>
+          <td>Quarta</td>
+          <td>8h~20h</td>
+        </tr>
+        <tr>
+          <td>Sexta</td>
+          <td>8h~20h</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <img src="../Imagens/logo-branco.png" alt="Logo da barbearia Alura">
+    <p class="copyright"> &copy; Copyrigth Barbearia Aluara - 2020</p>
+  </footer>
+</body>
+
+</html>

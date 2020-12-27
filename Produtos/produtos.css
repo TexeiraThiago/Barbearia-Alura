@@ -1,0 +1,89 @@
+header {
+  background: #bbbbbb;
+  padding: 20px 0; /*20 pra cima e pra baixo e 0 para direita e esquerda */
+}
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto; /*0 cima e pra baixo e automatico direita e equerda */
+}
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+/* cada link */
+nav a {
+  font-size: 22px;
+  font-weight: bold; /* deixa em negrito e com sublinhado */
+  text-decoration: none; /* remove o sublinhado deixando só negrito*/
+  color: black;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #c78c19;
+}
+
+/* configuração do menu */
+nav li {
+  display: inline; /* o conteudo ocupa apenas o espaço do texto*/
+  margin: 0 0 0 15px; /* cima direita baixo esquerda*/
+}
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box; /* garante que o padding esteja dentro do width determinado */
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.produtos li:hover {
+  border-color: #c78c19;
+}
+/* altera a propriedade do li quando clica  */
+.produtos li:active {
+  border-color: #088c19;
+}
+/* altera propriedade do texto quando o mouse passa sobre li */
+.produtos li:hover h2 {
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descicao {
+  font-size: 18px;
+}
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+  background: url('../Imagens/bg.jpg');
+  padding: 40px 0;
+}
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}

@@ -1,0 +1,106 @@
+header {
+  background: #bbbbbb;
+  padding: 20px 0; /*20 pra cima e pra baixo e 0 para direita e esquerda */
+}
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto; /*0 cima e pra baixo e automatico direita e equerda */
+}
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+/* cada link */
+nav a {
+  font-size: 22px;
+  font-weight: bold; /* deixa em negrito e com sublinhado */
+  text-decoration: none; /* remove o sublinhado deixando só negrito*/
+  color: black;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #c78c19;
+}
+
+/* configuração do menu */
+nav li {
+  display: inline; /* o conteudo ocupa apenas o espaço do texto*/
+  margin: 0 0 0 15px; /* cima direita baixo esquerda*/
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.inputPadrao {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  color: white;
+  background: orange;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.2);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+table thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+  padding: 8px 15px;
+}
+
+footer {
+  text-align: center;
+  background: url('../Imagens/bg.jpg');
+  padding: 40px 0;
+}
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}
